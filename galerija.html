@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+        }
+        body h2 { 
+            text-align: center;
+        }
+
+        p {
+           display: block;
+             width: 500px;
+ align-self:center;
+ 
+        }
+
+.container { 
+    display: flex;
+    flex-direction: column;
+}
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+           
+        }
+
+      .gallery-item{ 
+        width: 100px;
+        height: 90px;
+        margin: 50px;
+        box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.344);
+        border-radius: 15px;
+      }
+
+
+.thumbnail{
+    height: 80px;
+    background-color:rgb(0, 183, 255);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.thumbnail img { 
+    position: relative;
+    top:30px;
+    left:40px;
+    height: 25px;
+    width: 25px;
+}
+
+.title {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+}
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 200px;
+                flex-direction: vertical;
+            }
+
+            img{ margin-left: 50px;}
+            p { width: 500px;
+        position: relative;
+        top:550px;
+        left: 50px;
+    }
+        }
+
+       
+        </style>
+</head>
+<body>
+    <div class="container">
+<h2> Gallery heading</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <div class="thumbnail">
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 1</div>
+        </div>
+        <div class="gallery-item">
+            <div class="thumbnail"> 
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 2</div>
+        </div>
+        <div class="gallery-item">
+            <div class="thumbnail">
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 3</div>
+        </div>
+        <div class="gallery-item">
+            <div class="thumbnail">
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 4</div>
+        </div>
+</div>
+
+
+
+        <div class="gallery">
+        <div class="gallery-item">
+            <div class="thumbnail">
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 5</div>
+        </div>
+        <div class="gallery-item">
+            <div class="thumbnail">
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 6</div>
+        </div>
+        <div class="gallery-item">
+            <div class="thumbnail">
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 7</div>
+        </div>
+        <div class="gallery-item">
+            <div class="thumbnail">
+                <img src="./art-gallery-15.svg">
+            </div>
+            <div class="title">Image 8</div>
+        </div>
+        
+</div>
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum iste, rerum maiores quasi exercitationem rem dolorem perspiciatis necessitatibus, vitae voluptatem a consequatur provident assumenda id doloremque sequi, fugiat temporibus quo. Suscipit tenetur ipsa qui deserunt blanditiis dolores nulla modi sapiente ex laudantium fugit molestiae eius, facilis maiores eligendi consequuntur!</p>
+    
+</div>
+</body>
+</html>
